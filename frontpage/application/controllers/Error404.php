@@ -1,9 +1,9 @@
 <?php if ( ! defined("BASEPATH")) exit("No direct script access allowed");
 /**
- * @Author: liuyu
+ * @Author: Perry.Zhang
  * @Date:   2015-11-16 11:31:54
- * @Last Modified by:   anchen
- * @Last Modified time: 2015-11-19 14:29:01
+ * @Last Modified by:   Perry.Zhang
+ * @Last Modified time: 2016-03-10 18:20:35
  */
 
 class Error404 extends CI_Controller 

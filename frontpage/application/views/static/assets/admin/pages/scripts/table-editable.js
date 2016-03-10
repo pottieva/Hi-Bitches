@@ -1,7 +1,7 @@
 /**
- * @Author: Jane.Hoo
+ * @Author: Perry.Zhang
  * @Date:   2015-11-06 
- * @Last Modified by:   Jane.Hoo
+ * @Last Modified by:   Perry.Zhang
  * @Last Modified time: 2015-11-26 19:54
  */
 
@@ -113,7 +113,7 @@ var TableEditable = function () {
      
             
             // set the initial value   
-            // modifiy by   liudongfa
+            // modifiy by   Perry.Zhang
             "pageLength": 10, 
             "language": {
                 "lengthMenu": " _MENU_ records"
@@ -127,7 +127,7 @@ var TableEditable = function () {
             }],
 
             // set first column as a default sort by asc  
-            // modifiy by   liudongfa
+            // modifiy by   Perry.Zhang
             "order": [
                 [0, "asc"]
             ] 
@@ -160,7 +160,7 @@ var TableEditable = function () {
 
             // 给insert 行初始化列
             // 定义空字符串所在数组 
-            // modifiy by   liudongfa 
+            // modifiy by   Perry.Zhang 
             var totalString = new Array();
             // 定义标志位
             var flag = 0;

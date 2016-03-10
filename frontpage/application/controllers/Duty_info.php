@@ -1,6 +1,6 @@
 <?php if ( ! defined("BASEPATH")) exit("No direct script access allowed");
 /**
- * @Author: liudongfa
+ * @Author: Perry.Zhang
  * @Date:   2015-12-23 10:30:00
  */
 class Duty_info extends CI_Controller

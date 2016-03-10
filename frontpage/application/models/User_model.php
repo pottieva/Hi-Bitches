@@ -2,8 +2,8 @@
 /**
  * @Author: Perry.Zhang
  * @Date:   2015-10-26 11:38:54
- * @Last Modified by:   anchen
- * @Last Modified time: 2015-11-16 10:59:04
+ * @Last Modified by:   Perry.Zhang
+ * @Last Modified time: 2016-03-10 18:19:02
  */
 class User_model extends CI_Model{
 

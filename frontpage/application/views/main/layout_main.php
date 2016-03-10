@@ -486,7 +486,7 @@ License: You must have a valid license purchased only from themeforest(the above
           <!-- END RESPONSIVE QUICK SEARCH FORM -->
         </li>
 		<!--
-		  modfiyed by liuyu ,增加动态高亮标签
+		  modfiyed by Perry.Zhang ,增加动态高亮标签
 		  -date 20151119 
 		-->        
         <li 
@@ -500,8 +500,8 @@ License: You must have a valid license purchased only from themeforest(the above
           </a>
         </li>
 
-		<!-- add by liuyu 增加info的边框 20151109
-		  -- modfiyed by liuyu ,增加动态高亮标签
+		<!-- add by Perry.Zhang 增加info的边框 20151109
+		  -- modfiyed by Perry.Zhang ,增加动态高亮标签
 		  -- date 20151119 
 		  -- modifyed by lianshifeng 增加了些许样式
 		  -- date 20151119

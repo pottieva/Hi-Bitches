@@ -5,7 +5,7 @@ var Inbox = function () {
     var listListing = '';
 
    /*
-   * written by   liudongfa
+   * written by   Perry.Zhang
    * date         20151118
    * modify date  20151127
    */
@@ -29,7 +29,7 @@ var Inbox = function () {
                 $('.inbox-header > h1').text(title);
 
                  // 加载模板列表时 同时更新 左侧的相应的记录数
-                 // date: 20151127  liudongfa
+                 // date: 20151127  Perry.Zhang
                  document.getElementById("inbox-content").innerHTML=res[0];
                  document.getElementById("Inbox1").innerHTML='规范总数('+res[1]['inbox']+')';
                  document.getElementById("Draft1").innerHTML='草稿箱('+res[1]['draft']+')';
@@ -54,7 +54,7 @@ var Inbox = function () {
     }
 
     /*
-   * written by : liudongfa
+   * written by : Perry.Zhang
    * date: 20151123
    */
     var loadMessage = function (el) {
@@ -88,7 +88,7 @@ var Inbox = function () {
     }
 
      // 上传文件时触发加载的方法
-     // written by  fanxinlei liudongfa   
+     // written by  fanxinlei Perry.Zhang   
      // date         20151126
     var initFileupload = function () {
         $('#fileupload').fileupload({
@@ -228,7 +228,7 @@ var Inbox = function () {
             the.show();
         });
     }
-    // 注释作者： liudongfa
+    // 注释作者： Perry.Zhang
     // 功能：     控件为可用或不可用相互切换。
     // 作用：     防止点击按钮后服务端还没有及时响应,用户频繁点击，加重服务端压力。
     var toggleButton = function(el) {
@@ -298,7 +298,7 @@ var Inbox = function () {
 
           //create 连石峰 add  删除到草稿箱
           //create_time  2015-11-23
-          //modifiy by   liudongfa   删除记录同时更新记录数
+          //modifiy by   Perry.Zhang   删除记录同时更新记录数
           //modifiy_time 2015_11_27
   	      $('.inbox-content').on('click','.fa-trash-do',function (){ 	    
               	var idlist = new Array();
@@ -343,7 +343,7 @@ var Inbox = function () {
   	      
   	      //create 连石峰 add  从数据库彻底删除
           //create_time  2015-11-23
-          //modifiy by   liudongfa   删除记录同时更新记录数
+          //modifiy by   Perry.Zhang   删除记录同时更新记录数
           //modifiy_time 2015_11_27
   	      $('.inbox-content').on('click','.fa-trash-co',function (){
   	    	    var title = $('.inbox-header > h1').text();

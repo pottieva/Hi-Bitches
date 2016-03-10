@@ -1,9 +1,9 @@
 <?php if ( ! defined("BASEPATH")) exit("No direct script access allowed");
 /**
- * @Author: liuyu
+ * @Author: Perry.Zhang
  * @Date:   2015-11-16 09:05:06
- * @Last Modified by:   Jane.Hoo
- * @Last Modified time: 2015-11-26 10:30:43
+ * @Last Modified by:   Perry.Zhang
+ * @Last Modified time: 2016-03-10 18:20:35
  */
 
 class User_info extends CI_Controller 
@@ -17,7 +17,7 @@ class User_info extends CI_Controller
     }
 
     /*
-     * modified by:Jane.Hoo
+     * modified by:Perry.Zhang
      * modified at:2015/11/26 19:42
      */
     public function index($name=null)
@@ -30,9 +30,9 @@ class User_info extends CI_Controller
     }
 
    /* 保存、更新用户信息。根据id来判断是insert 还是update.
-    * written by Jane.Hoo
+    * written by Perry.Zhang
     * written at 2015/11
-    * modify by  liudongfa
+    * modify by  Perry.Zhang
     * date       2015/11/30
     */
     public function save_usermsg()
@@ -53,7 +53,7 @@ class User_info extends CI_Controller
     }
 
    /*
-     * written by Jane.Hoo
+     * written by Perry.Zhang
      * 删除用户信息，根据id删除
      */
     public function del_usermsg() 
@@ -67,7 +67,7 @@ class User_info extends CI_Controller
    /**
     * 前端用户信息reload：调用的方法。
     * 前端请求类型：ajax，只刷新部分数据。提高用户的体验度；减少数据传输提高响应速度
-    * written by  liudongfa
+    * written by  Perry.Zhang
     */
      function reload(){         
             $this->load->helper('url');

@@ -1,9 +1,9 @@
 <?php 
 /**
- * @Author: Jane.Hoo
+ * @Author: Perry.Zhang
  * @Date:   2015-11-25 10:48:54
- * @Last Modified by:   Jane.Hoo
- * @Last Modified time: 2015-11-25 10:48:54
+ * @Last Modified by:   Perry.Zhang
+ * @Last Modified time: 2016-03-10 18:20:05
  */
 class Duty_model extends CI_Model
 {

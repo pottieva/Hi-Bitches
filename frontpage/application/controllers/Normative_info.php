@@ -1,14 +1,14 @@
 <?php if ( ! defined("BASEPATH")) exit("No direct script access allowed");
 /**
- * @Author: Jane.Hoo
+ * @Author: Perry.Zhang
  * @Date:   2015-11-25 10:59:54
- * @Last Modified by:   Jane.Hoo
- * @Last Modified time: 2015-11-25 10:59:54
+ * @Last Modified by:   Perry.Zhang
+ * @Last Modified time: 2016-03-10 18:20:04
  */
 class Normative_info extends CI_Controller
 {
 	/*
-	 * modified by:Jane.Hoo
+	 * modified by:Perry.Zhang
 	 * modified at:2015/11/26 20:40
 	 */
 	function __construct()
@@ -31,8 +31,8 @@ class Normative_info extends CI_Controller
 	}
 	
 	/*
-	 * written by :liudongfa
-	 * modified by:Jane.Hoo
+	 * written by :Perry.Zhang
+	 * modified by:Perry.Zhang
 	 * modified at:2015/11/26 20:40
 	 */
 	public function save(){
@@ -52,8 +52,8 @@ class Normative_info extends CI_Controller
 	}
 	
 	/*
-	 * written by : liudongfa
-	 * modified by: Jane.Hoo
+	 * written by : Perry.Zhang
+	 * modified by: Perry.Zhang
 	 * modified at: 2015/11/25
 	 */
 	public function normative_info_inbox(){
@@ -65,7 +65,7 @@ class Normative_info extends CI_Controller
 			$data[0] =$this->load->view('info/inbox_inbox',$normative_infos,true);
 			echo json_encode($data);
 		}
-		//add by:Jane.Hoo & add at:2015/11/25 15:04
+		//add by:Perry.Zhang & add at:2015/11/25 15:04
 		if($_GET['status'] == 0)
 		{
 			$data[0] =$this->load->view('info/inbox_inbox',$normative_infos,true);
@@ -81,7 +81,7 @@ class Normative_info extends CI_Controller
 	/*
 	 * lianshifeng  添加了一个删除功能
 	 * date  2015-11-23
-	 * modified by: Jane.Hoo
+	 * modified by: Perry.Zhang
 	 * modified at: 2015/11/28
 	 */
 	public function  delete(){
@@ -90,7 +90,7 @@ class Normative_info extends CI_Controller
 		$this->norm->alter_normative_info_status($_GET['id']);
 		$normative_infos = $this->norm->get_normative_info_by_flag($status);
 		$data[0] = $this->load->view('info/inbox_inbox',$normative_infos,true);
-		// 添加不同种类的记录数  liudongfa  2015/11/27
+		// 添加不同种类的记录数  Perry.Zhang  2015/11/27
 		$data[1]=$this->norm->get_normnum_by_status();
 		echo json_encode($data);
 	}
@@ -98,7 +98,7 @@ class Normative_info extends CI_Controller
 	/*
 	 * lianshifeng  添加了一个彻底删除功能
 	 * date 2015-11-24
-	 * modified by: Jane.Hoo
+	 * modified by: Perry.Zhang
 	 * modified at: 2015/11/28
 	 */
 	public function  complete_delete(){
@@ -117,7 +117,7 @@ class Normative_info extends CI_Controller
 		}
 		$normative_infos=$this->norm->get_normative_info_by_flag($status);
 		$data[0] =$this->load->view('info/inbox_delete',$normative_infos,true);
-		// 添加不同种类的记录数  liudongfa  2015/11/27
+		// 添加不同种类的记录数  Perry.Zhang  2015/11/27
 		$data[1]=$this->norm->get_normnum_by_status();
 		echo json_encode($data);
 	}
@@ -135,7 +135,7 @@ class Normative_info extends CI_Controller
 	}
 	
 	/*
-	 * written by : liudongfa
+	 * written by : Perry.Zhang
 	 * date: 20151125
 	 */
 	public function loadMessage (){
@@ -146,7 +146,7 @@ class Normative_info extends CI_Controller
 	}
 	
 	/*
-	 * written by : fanxinlei liudongfa
+	 * written by : fanxinlei Perry.Zhang
 	 * date:        20151125
 	 * 实现代码上传到服务器
 	 */

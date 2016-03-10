@@ -1,9 +1,9 @@
 <?php 
 /**
- * @Author: Jane.Hoo
+ * @Author: Perry.Zhang
  * @Date:   2015-11-25 10:48:54
- * @Last Modified by:   Jane.Hoo
- * @Last Modified time: 2015-11-25 10:48:54
+ * @Last Modified by:   Perry.Zhang
+ * @Last Modified time: 2016-03-10 18:20:05
  */
 class Norm_model extends CI_Model{
    protected $table='normative_info';
@@ -33,7 +33,7 @@ class Norm_model extends CI_Model{
     
     /*
      * 查询不同状态下的规范数据量
-     * written by Jane.Hoo
+     * written by Perry.Zhang
      * written at 2015/11/25 11:12
      */
     public function get_normnum_by_status(){
@@ -90,7 +90,7 @@ class Norm_model extends CI_Model{
      * 修改表的状态
      * written by  连石峰
      * date  20151123
-     * modified by:Jane.Hoo
+     * modified by:Perry.Zhang
      * modified at:2015/11/28
      */
     public function alter_normative_info_status($id)

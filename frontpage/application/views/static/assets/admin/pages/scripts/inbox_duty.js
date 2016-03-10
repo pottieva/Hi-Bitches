@@ -5,7 +5,7 @@ var Inbox = function () {
     var listListing = '';
 
    /*
-   * written by   liudongfa
+   * written by   Perry.Zhang
    * date         20151118
    * modify date  20151127
    */
@@ -30,7 +30,7 @@ var Inbox = function () {
                 $('.inbox-nav > li.active').removeClass('active');
                 $('.inbox-nav > li.' + name).addClass('active');
                 $('.inbox-header > h1').text('值班查询');
-                 // date: 20151127  liudongfa
+                 // date: 20151127  Perry.Zhang
                  document.getElementById("inbox-content").innerHTML=res[0];
             },
             error: function(xhr, ajaxOptions, thrownError)
@@ -53,7 +53,7 @@ var Inbox = function () {
     }
 
     /*
-   * written by : liudongfa
+   * written by : Perry.Zhang
    * date: 20151123
    */
     var loadMessage = function (el) {
@@ -87,7 +87,7 @@ var Inbox = function () {
     }
 
      // 上传文件时触发加载的方法
-     // written by  fanxinlei liudongfa   
+     // written by  fanxinlei Perry.Zhang   
      // date         20151126
     var initFileupload = function () {
         $('#fileupload').fileupload({
@@ -227,7 +227,7 @@ var Inbox = function () {
             the.show();
         });
     }
-    // 注释作者： liudongfa
+    // 注释作者： Perry.Zhang
     // 功能：     控件为可用或不可用相互切换。
     // 作用：     防止点击按钮后服务端还没有及时响应,用户频繁点击，加重服务端压力。
     var toggleButton = function(el) {
