@@ -3,7 +3,7 @@
  * @Author: Perry.Zhang
  * @Date:   2015-11-16 09:05:06
  * @Last Modified by:   Perry.Zhang
- * @Last Modified time: 2016-03-10 18:20:35
+ * @Last Modified time: 2016-03-14 15:57:49
  */
 
 class User_info extends CI_Controller 
@@ -44,8 +44,8 @@ class User_info extends CI_Controller
         if ($id==""){ 
             //清空空字符id
             unset($data["id"]);
-            // 设置初始密码为abcd_123  
-            $data['password']=$this->encryption->encrypt('abcd_123');
+            // 设置初始密码为okm963  
+            $data['password']=$this->encryption->encrypt('okm963');
             $this->user->insert($data);
         }else{
             $this->user->update($data,$id);
