@@ -361,7 +361,7 @@ $config['sess_expiration'] = 7200;
 
 # for Linux
 # $config['sess_save_path'] = '/tmp/session';
-# for Windows
+# for Windows Debug
 $config['sess_save_path'] = 'D:\wamp\www\HiBitches\frontpage\tmp\session';
 
 $config['sess_match_ip'] = FALSE;

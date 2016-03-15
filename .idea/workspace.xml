@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b2ebe0a-f09e-4a0e-9bf5-f1ce81758df9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/frontpage/application/views/static/assets/admin/pages/media/search�2.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/frontpage/application/views/static/assets/admin/pages/media/search�img1.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/frontpage/application/views/static/assets/admin/pages/media/search�img2.jpg" afterPath="" />
@@ -1440,6 +1439,26 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/application/views/static/templates/admin/email_template4/images/logo.gif" afterPath="$PROJECT_DIR$/frontpage/application/views/static/templates/admin/email_template4/images/logo.gif" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/application/views/static/templates/admin/email_template4/images/promo.jpg" afterPath="$PROJECT_DIR$/frontpage/application/views/static/templates/admin/email_template4/images/promo.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/system/fonts/texb.ttf" afterPath="$PROJECT_DIR$/frontpage/system/fonts/texb.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/HiBitches.iml" afterPath="$PROJECT_DIR$/.idea/HiBitches.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HiBitches/__init__.py" afterPath="$PROJECT_DIR$/HiBitches/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HiBitches/settings.py" afterPath="$PROJECT_DIR$/HiBitches/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HiBitches/urls.py" afterPath="$PROJECT_DIR$/HiBitches/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HiBitches/wsgi.py" afterPath="$PROJECT_DIR$/HiBitches/wsgi.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/.buildpath" afterPath="$PROJECT_DIR$/frontpage/.buildpath" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/.htaccess" afterPath="$PROJECT_DIR$/frontpage/.htaccess" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/.project" afterPath="$PROJECT_DIR$/frontpage/.project" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/.pydevproject" afterPath="$PROJECT_DIR$/frontpage/.pydevproject" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/.settings/org.eclipse.core.resources.prefs" afterPath="$PROJECT_DIR$/frontpage/.settings/org.eclipse.core.resources.prefs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/.settings/org.eclipse.php.core.prefs" afterPath="$PROJECT_DIR$/frontpage/.settings/org.eclipse.php.core.prefs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/.settings/org.eclipse.php.ui.prefs" afterPath="$PROJECT_DIR$/frontpage/.settings/org.eclipse.php.ui.prefs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/.settings/org.eclipse.wst.common.project.facet.core.xml" afterPath="$PROJECT_DIR$/frontpage/.settings/org.eclipse.wst.common.project.facet.core.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/.settings/org.eclipse.wst.validation.prefs" afterPath="$PROJECT_DIR$/frontpage/.settings/org.eclipse.wst.validation.prefs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/README.md" afterPath="$PROJECT_DIR$/frontpage/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/application/cache/.htaccess" afterPath="$PROJECT_DIR$/frontpage/application/cache/.htaccess" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/application/cache/index.html" afterPath="$PROJECT_DIR$/frontpage/application/cache/index.html" />
@@ -1456,6 +1475,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/application/config/migration.php" afterPath="$PROJECT_DIR$/frontpage/application/config/migration.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/application/config/mimes.php" afterPath="$PROJECT_DIR$/frontpage/application/config/mimes.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/application/config/profiler.php" afterPath="$PROJECT_DIR$/frontpage/application/config/profiler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/application/config/rest.php" afterPath="$PROJECT_DIR$/frontpage/application/config/rest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/application/config/routes.php" afterPath="$PROJECT_DIR$/frontpage/application/config/routes.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/application/config/smileys.php" afterPath="$PROJECT_DIR$/frontpage/application/config/smileys.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/application/config/user_agents.php" afterPath="$PROJECT_DIR$/frontpage/application/config/user_agents.php" />
@@ -1467,13 +1487,27 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/application/controllers/Login.php" afterPath="$PROJECT_DIR$/frontpage/application/controllers/Login.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/application/controllers/Normative_info.php" afterPath="$PROJECT_DIR$/frontpage/application/controllers/Normative_info.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/application/controllers/User_info.php" afterPath="$PROJECT_DIR$/frontpage/application/controllers/User_info.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/application/controllers/api/Api_user_info.php" afterPath="$PROJECT_DIR$/frontpage/application/controllers/api/Api_user_info.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/application/controllers/api/Example.php" afterPath="$PROJECT_DIR$/frontpage/application/controllers/api/Example.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/application/controllers/api/Key.php" afterPath="$PROJECT_DIR$/frontpage/application/controllers/api/Key.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/application/core/index.html" afterPath="$PROJECT_DIR$/frontpage/application/core/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/application/helpers/index.html" afterPath="$PROJECT_DIR$/frontpage/application/helpers/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/application/hooks/index.html" afterPath="$PROJECT_DIR$/frontpage/application/hooks/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/application/index.html" afterPath="$PROJECT_DIR$/frontpage/application/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/application/language/bulgarian/index.html" afterPath="$PROJECT_DIR$/frontpage/application/language/bulgarian/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/application/language/bulgarian/rest_controller_lang.php" afterPath="$PROJECT_DIR$/frontpage/application/language/bulgarian/rest_controller_lang.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/application/language/english/index.html" afterPath="$PROJECT_DIR$/frontpage/application/language/english/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/application/language/english/rest_controller_lang.php" afterPath="$PROJECT_DIR$/frontpage/application/language/english/rest_controller_lang.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/application/language/french/index.html" afterPath="$PROJECT_DIR$/frontpage/application/language/french/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/application/language/french/rest_controller_lang.php" afterPath="$PROJECT_DIR$/frontpage/application/language/french/rest_controller_lang.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/application/language/index.html" afterPath="$PROJECT_DIR$/frontpage/application/language/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/application/language/portuguese-brazilian/index.html" afterPath="$PROJECT_DIR$/frontpage/application/language/portuguese-brazilian/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/application/language/portuguese-brazilian/rest_controller_lang.php" afterPath="$PROJECT_DIR$/frontpage/application/language/portuguese-brazilian/rest_controller_lang.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/application/language/spanish/index.html" afterPath="$PROJECT_DIR$/frontpage/application/language/spanish/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/application/language/spanish/rest_controller_lang.php" afterPath="$PROJECT_DIR$/frontpage/application/language/spanish/rest_controller_lang.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/application/libraries/Format.php" afterPath="$PROJECT_DIR$/frontpage/application/libraries/Format.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/application/libraries/Layout.php" afterPath="$PROJECT_DIR$/frontpage/application/libraries/Layout.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/application/libraries/REST_Controller.php" afterPath="$PROJECT_DIR$/frontpage/application/libraries/REST_Controller.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/application/libraries/Word2html.php" afterPath="$PROJECT_DIR$/frontpage/application/libraries/Word2html.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/application/libraries/index.html" afterPath="$PROJECT_DIR$/frontpage/application/libraries/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/application/logs/index.html" afterPath="$PROJECT_DIR$/frontpage/application/logs/index.html" />
@@ -1516,6 +1550,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/application/views/login.php" afterPath="$PROJECT_DIR$/frontpage/application/views/login.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/application/views/main/index.php" afterPath="$PROJECT_DIR$/frontpage/application/views/main/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/application/views/main/layout_main.php" afterPath="$PROJECT_DIR$/frontpage/application/views/main/layout_main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/application/views/rest_server.php" afterPath="$PROJECT_DIR$/frontpage/application/views/rest_server.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/application/views/static/assets/admin/layout/css/custom.css" afterPath="$PROJECT_DIR$/frontpage/application/views/static/assets/admin/layout/css/custom.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/application/views/static/assets/admin/layout/css/layout.css" afterPath="$PROJECT_DIR$/frontpage/application/views/static/assets/admin/layout/css/layout.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/application/views/static/assets/admin/layout/css/themes/blue.css" afterPath="$PROJECT_DIR$/frontpage/application/views/static/assets/admin/layout/css/themes/blue.css" />
@@ -4397,7 +4432,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/index.php" afterPath="$PROJECT_DIR$/frontpage/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/license.txt" afterPath="$PROJECT_DIR$/frontpage/license.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/readme.rst" afterPath="$PROJECT_DIR$/frontpage/readme.rst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/sql/create_tables.sql" afterPath="$PROJECT_DIR$/frontpage/sql/create_tables.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/sql/create_database_newbee.sql" afterPath="$PROJECT_DIR$/frontpage/sql/create_database_newbee.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/sql/create_tables_for_newbee.sql" afterPath="$PROJECT_DIR$/frontpage/sql/create_tables_for_newbee.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/sql/duty.sql" afterPath="$PROJECT_DIR$/frontpage/sql/duty.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/system/.htaccess" afterPath="$PROJECT_DIR$/frontpage/system/.htaccess" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/system/core/Benchmark.php" afterPath="$PROJECT_DIR$/frontpage/system/core/Benchmark.php" />
@@ -4600,6 +4636,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/system/libraries/Xmlrpcs.php" afterPath="$PROJECT_DIR$/frontpage/system/libraries/Xmlrpcs.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/system/libraries/Zip.php" afterPath="$PROJECT_DIR$/frontpage/system/libraries/Zip.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontpage/system/libraries/index.html" afterPath="$PROJECT_DIR$/frontpage/system/libraries/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage.py" afterPath="$PROJECT_DIR$/manage.py" />
     </list>
     <ignored path="HiBitches.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -4612,6 +4649,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/HiBitches$add_new_app.coverage" NAME="add new app Coverage Results" MODIFIED="1458030151522" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -4620,12 +4660,12 @@
     <favorites_list name="HiBitches" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HiBitches/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5813559">
-              <caret line="115" column="13" selection-start-line="115" selection-start-column="13" selection-end-line="115" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="83" column="29" selection-start-line="83" selection-start-column="29" selection-end-line="83" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -4635,8 +4675,34 @@
         <entry file="file://$PROJECT_DIR$/HiBitches/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-              <folding />
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding>
+                <element signature="e#642#674#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mytest/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mytest/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.24611399">
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -4645,6 +4711,15 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/HiBitches/settings.py" />
+        <option value="$PROJECT_DIR$/HiBitches/urls.py" />
+        <option value="$PROJECT_DIR$/mytest/views.py" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" />
   <component name="JsBuildToolPackageJson" detection-done="true" />
@@ -4680,6 +4755,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -4708,21 +4784,34 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="frontpage" />
+              <option name="myItemId" value="mytest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HiBitches" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HiBitches" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HiBitches" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="D:/Python27/python.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/manage.py" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
-  <component name="RunManager" selected="Django server.HiBitches">
+  <component name="RunManager" selected="Python.add new app">
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -4945,7 +5034,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="D:\Python27\python.exe" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -4962,8 +5051,27 @@
       <option name="customRunCommand" value="" />
       <method />
     </configuration>
-    <list size="1">
+    <configuration default="false" name="add new app" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\Python27\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="HiBitches" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manage.py" />
+      <option name="PARAMETERS" value="startapp mytest" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Django server.HiBitches" />
+      <item index="1" class="java.lang.String" itemvalue="Python.add new app" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -4989,18 +5097,18 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -5015,23 +5123,53 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/HiBitches/urls.py</url>
+          <line>15</line>
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/HiBitches/urls.py">
+    <entry file="file://$PROJECT_DIR$/HiBitches/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+          <caret line="83" column="29" selection-start-line="83" selection-start-column="29" selection-end-line="83" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HiBitches/settings.py">
+    <entry file="file://$PROJECT_DIR$/HiBitches/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5813559">
-          <caret line="115" column="13" selection-start-line="115" selection-start-column="13" selection-end-line="115" selection-end-column="13" />
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="e#642#674#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mytest/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mytest/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24611399">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
