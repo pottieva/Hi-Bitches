@@ -3,7 +3,7 @@
  * @Author: Perry.Zhang
  * @Date:   2015-10-26 11:38:54
  * @Last Modified by:   Perry.Zhang
- * @Last Modified time: 2016-03-10 18:19:02
+ * @Last Modified time: 2016-03-15 17:18:40
  */
 class User_model extends CI_Model{
 
@@ -14,14 +14,16 @@ class User_model extends CI_Model{
     /*
      * 保存用户信息
      */
-   public function insert($data){      
+    public function insert($data)
+    {      
         $this->db->insert($this->table, $data);
     }
     
     /*
      * 更新用户信息
     */
-    public function update($data,$id){
+    public function update($data,$id)
+    {
         $this->db->where('id', $id);
         $this->db->update($this->table, $data);
     }
@@ -29,7 +31,8 @@ class User_model extends CI_Model{
     /*
      * 删除信息
     */
-    public function delete($id){
+    public function delete($id)
+    {
         $this->db->where('id', $id);
         $this->db->delete($this->table);
     }
@@ -37,7 +40,8 @@ class User_model extends CI_Model{
     /*
      * 更新用户登录信息
      */
-    public function update_login($id){
+    public function update_login($id)
+    {
         $data = array(
                 'last_login_time'=>date('Y-m-d H:i:s'),
                 'last_login_ip'=>$this->input->ip_address(),
@@ -50,7 +54,8 @@ class User_model extends CI_Model{
     /*
      * 检查用户密码是否合法
      */
-    public function check_user($username){
+    public function check_user($username)
+    {
     	$this->db->select('password');
     	$this->db->select('status');
     	$this->db->select('id');
@@ -68,7 +73,8 @@ class User_model extends CI_Model{
     /*
      * 检查当前用户的原密码是否正确
      */
-    public function check_old_password($uid,$password){
+    public function check_old_password($uid,$password)
+    {
         $this->db->where('id', $uid);
         $this->db->where('password', md5($password));
         $this->db->where('status',1);
@@ -82,7 +88,8 @@ class User_model extends CI_Model{
     /*
      * 根据uid获取用户信息
      */
-    function get_user_by_id($id){
+    function get_user_by_id($id)
+    {
         $query = $this->db->get_where($this->table, array('id'=>$id));
         if ($query->num_rows() > 0)
         {
@@ -93,7 +100,8 @@ class User_model extends CI_Model{
     /*
      * 根据用户名查询用户
     */
-    function get_user_by_username($username=''){
+    function get_user_by_username($username='')
+    {
         $query = $this->db->get_where($this->table, array('username'=>$username));
         if ($query->num_rows() > 0)
         {
@@ -121,7 +129,8 @@ class User_model extends CI_Model{
     /*
      * 通过用户名更新用户密码
      */
-    public function update_password_by_username($data,$username){
+    public function update_password_by_username($data,$username)
+    {
         $this->db->where('username', $username);
         $this->db->update($this->table, $data);
     }
@@ -129,7 +138,8 @@ class User_model extends CI_Model{
     /*
      * 获取用户表中所有用户信息
      */
-    function get_total_user(){
+    function get_total_user()
+    {
         $this->db->select('id,username, realname,email,login_count,status');
         $query = $this->db->get($this->table);
         if ($query->num_rows() > 0)
@@ -140,10 +150,35 @@ class User_model extends CI_Model{
         }
     }
 
-}
+
+
+/*
+    For PHP model layer call Django 
+    Example:
+*/
+
+    function get_user_by_id_called_by_django($id)
+    {
+        #$url = 'http://bitch.com/index.php/user_info/';
+        $url = "http://baidu.com";
+        $header = array('Content-Type: application/json');
+        $curl = curl_init();
+        curl_setopt($curl,CURLOPT_URL,$url);
+        curl_setopt($curl,CURLOPT_HTTPHEADER,$header);
+        $data = curl_exec($curl);
+        $error = curl_error($ch);
+        curl_close($ch);
+        if ($error)
+            throw new Exception('请求发生错误：' . $error);
+        return $data;
+        #$url = base_url($uri = "user/id=$id");
+        #return $data;
+        print_r($data);
+    }
+
 
     
-
+}
 /*        foreach ($where as $key=>$value){
             $this->db->where($key, $value);
         }     
