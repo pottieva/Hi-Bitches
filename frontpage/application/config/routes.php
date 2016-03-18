@@ -58,4 +58,4 @@ $route['translate_uri_dashes'] = FALSE;
 | REST API Routes
 | -------------------------------------------------------------------------
 */
-$route['api/api_user_info/(:num)'] = 'api/api_user_info/user/id/$1';
+$route['api/api_debug/(:num)'] = 'api/api_debug/debug/id/$1';

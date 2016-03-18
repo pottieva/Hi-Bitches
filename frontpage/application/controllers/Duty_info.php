@@ -108,23 +108,23 @@ class Duty_info extends CI_Controller
   * 值班数据初始化
   */
   public function init_duty(){
-  	    // 获取值班人信息
+      // 获取值班人信息
      	$data = $this->duty->get_total_members();
      	// 获取当前月上个月末
      	$nowfrist=date('Y-m-01');
-		$date=date('Y-m-d',strtotime("$nowfrist  -1  day"));
+		  $date=date('Y-m-d',strtotime("$nowfrist  -1  day"));
 	    $data['date']=$date;
 	    // 获取月末初始化值班人
 	    $init_members=$this->duty->get_init_members($date);
 	    if(!empty($init_members)){
-	    	 foreach ($init_members as $member){
-	    	if($member['category']==1){
-               $data['oracle']=$member['member'];
-	    	}elseif ($member['category']==2) {
-	    		 $data['mysql']=$member['member'];
-	    	}
+	    	foreach ($init_members as $member){
+	    	  if($member['category']==1){
+            $data['oracle']=$member['member'];
+	    	  }
+          elseif ($member['category']==2) {
+	    	    $data['mysql']=$member['member'];
+	    	  }
 	      }
-
 	    }	   
 	    //print_r($data['mysql']);
     	$data[0] =$this->load->view('duty/duty_init',$data,true);

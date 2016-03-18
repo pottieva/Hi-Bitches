@@ -3,7 +3,7 @@
  * @Author: Perry.Zhang
  * @Date:   2015-10-26 11:38:54
  * @Last Modified by:   Perry.Zhang
- * @Last Modified time: 2016-03-15 17:18:40
+ * @Last Modified time: 2016-03-17 13:41:44
  */
 class User_model extends CI_Model{
 
@@ -162,12 +162,21 @@ class User_model extends CI_Model{
         #$url = 'http://bitch.com/index.php/user_info/';
         $url = "http://baidu.com";
         $header = array('Content-Type: application/json');
-        $curl = curl_init();
-        curl_setopt($curl,CURLOPT_URL,$url);
-        curl_setopt($curl,CURLOPT_HTTPHEADER,$header);
+        $post_data = array("content" => "Hello world!","alias" => "Test!");
+        $curl = curl_init($url);
+
+        curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($curl, CURLOPT_POST, 1);
+        curl_setopt($curl, CURLOPT_POSTFIELDS, $post_data);
+
+        curl_setopt($curl, CURLOPT_HEADER, true);
+        curl_setopt($curl, CURLOPT_HTTPHEADER, $header);
+
         $data = curl_exec($curl);
-        $error = curl_error($ch);
-        curl_close($ch);
+        $error = curl_error($curl);
+
+        curl_close($curl);
+
         if ($error)
             throw new Exception('请求发生错误：' . $error);
         return $data;
@@ -179,10 +188,6 @@ class User_model extends CI_Model{
 
     
 }
-/*        foreach ($where as $key=>$value){
-            $this->db->where($key, $value);
-        }     
-        $query=$this->db->get($table_name);
-*/
+
 /* End of file user_model.php */
 /* Location: ./application/models/user_model.php */
