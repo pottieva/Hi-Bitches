@@ -3,7 +3,7 @@
  * @Author: Perry.Zhang
  * @Date:   2015-11-16 09:05:06
  * @Last Modified by:   Perry.Zhang
- * @Last Modified time: 2016-03-15 16:09:38
+ * @Last Modified time: 2016-03-30 16:14:04
  */
 
 class User_info extends CI_Controller 
@@ -24,7 +24,7 @@ class User_info extends CI_Controller
     {
     	$data = $this->user->get_total_user();
     	$data['title'] = "用户信息";
-    	$data['active_nav'] = "Infomation_index";
+    	$data['active_nav'] = "infomation_index";
     	$data['active_sub_nav'] = "user_info_index";
     	$this->layout->view('info/user_info',$data);
     }

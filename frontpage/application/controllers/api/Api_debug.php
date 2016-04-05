@@ -5,7 +5,7 @@ require APPPATH.'/libraries/REST_Controller.php';
  * @Author: Perry.Zhang
  * @Date:   2016-03-14 11:50:41
  * @Last Modified by:   Perry.Zhang
- * @Last Modified time: 2016-03-18 09:20:20
+ * @Last Modified time: 2016-03-23 16:45:34
  */
 
 class Api_debug extends REST_Controller
@@ -25,8 +25,7 @@ class Api_debug extends REST_Controller
         $auth_url='http://127.0.0.1:8000/api/token/';
         $auth_data='{"username":"admin","password":"admin"}';
 
-        $data = '{"id":"2"
-}';
+        $data = '{"id":"2"}';
         #$result = $this->curl->request_interface($auth_url,"GET_TOKEN",$auth_data);
         #$result = $this->curl->request_interface($url,"GET");
         #$result = $this->curl->request_interface($url,"POST",$data);

@@ -3,7 +3,7 @@
  * @Author: Perry.Zhang
  * @Date:   2015-11-25 10:59:54
  * @Last Modified by:   Perry.Zhang
- * @Last Modified time: 2016-03-10 18:20:04
+ * @Last Modified time: 2016-03-30 16:14:02
  */
 class Normative_info extends CI_Controller
 {
@@ -25,7 +25,7 @@ class Normative_info extends CI_Controller
 		$this->load->helper('url');
 		$data['norm_status']=$this->norm->get_normnum_by_status();
 		$data['title'] = "用户管理中心";
-		$data['active_nav'] = "Infomation_index";
+		$data['active_nav'] = "infomation_index";
 		$data['active_sub_nav'] = "norm_info_index";
 		$this->layout->view('info/normative_info',$data);
 	}

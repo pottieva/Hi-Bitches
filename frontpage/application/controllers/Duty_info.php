@@ -17,9 +17,8 @@ class Duty_info extends CI_Controller
 	public function index()
 	{
 		$data['title']='值班信息';
-		$data['active_nav']='Infomation_index';
+		$data['active_nav']='infomation_index';
 		$data['active_sub_nav']='duty_info_index';
-		//var_dump(9876);
 		$this->layout->view('duty/duty_info',$data);
 	}
 
@@ -67,11 +66,13 @@ class Duty_info extends CI_Controller
  
     public function save_usermsg()
     {  
-        foreach ($_GET as $key=>$value){
+        foreach ($_GET as $key=>$value)
+        {
             $data[$key]=$value;
         }
         $id=$data["id"];
-        if ($id==""){ 
+        if ($id=="")
+        { 
             //清空空字符id
             unset($data["id"]);
             $this->duty->insert($data);
@@ -107,7 +108,8 @@ class Duty_info extends CI_Controller
   /**
   * 值班数据初始化
   */
-  public function init_duty(){
+  public function init_duty()
+  {
       // 获取值班人信息
      	$data = $this->duty->get_total_members();
      	// 获取当前月上个月末
@@ -116,12 +118,16 @@ class Duty_info extends CI_Controller
 	    $data['date']=$date;
 	    // 获取月末初始化值班人
 	    $init_members=$this->duty->get_init_members($date);
-	    if(!empty($init_members)){
-	    	foreach ($init_members as $member){
-	    	  if($member['category']==1){
+	    if(!empty($init_members))
+      {
+	    	foreach ($init_members as $member)
+        {
+	    	  if($member['category']==1)
+          {
             $data['oracle']=$member['member'];
 	    	  }
-          elseif ($member['category']==2) {
+          elseif ($member['category']==2) 
+          {
 	    	    $data['mysql']=$member['member'];
 	    	  }
 	      }
@@ -134,10 +140,12 @@ class Duty_info extends CI_Controller
   /**
    *  保存值班初始化数据
    */
-  function save_duty_init(){
+  public function save_duty_init()
+  {
   	$data=array();
   	unset($_GET['_']);
-  	foreach ($_GET as $key => $value) {
+  	foreach ($_GET as $key => $value) 
+    {
   		$data[$key]=$value;
   	}
   	$this->duty->replace_duty($data);

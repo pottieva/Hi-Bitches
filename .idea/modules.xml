@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Distrib/.idea/Distrib.iml" filepath="$PROJECT_DIR$/../Distrib/.idea/Distrib.iml" />
       <module fileurl="file://$PROJECT_DIR$/../Distribution/.idea/Distribution.iml" filepath="$PROJECT_DIR$/../Distribution/.idea/Distribution.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/HiBitches.iml" filepath="$PROJECT_DIR$/.idea/HiBitches.iml" />
     </modules>

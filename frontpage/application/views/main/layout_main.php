@@ -507,7 +507,7 @@ License: You must have a valid license purchased only from themeforest(the above
 		  -- date 20151119
 		-->
     	<li 
-      		<?php if($active_nav=='Infomation_index') echo "class= active";?>
+      		<?php if($active_nav=='infomation_index') echo "class= active";?>
    		>
           <a href="javascript:;">
           <i class="icon-briefcase"></i>
@@ -531,10 +531,6 @@ License: You must have a valid license purchased only from themeforest(the above
              <i class="icon-users"></i>
               值班信息</a>
             </li>
-
-
-
-
             <li
             	<?php if($active_sub_nav=='norm_info_index') echo "class=active";?>
             >           
@@ -543,11 +539,11 @@ License: You must have a valid license purchased only from themeforest(the above
               规范信息</a>
             </li>
             <li 
-            	<?php if($active_sub_nav=='machine_info_index') echo "class=active";?>
+            	<?php if($active_sub_nav=='host_info_index') echo "class=active";?>
             >
-              <a href="<?php echo site_url('error404');?>">
+              <a href="<?php echo site_url('host_info');?>">
               <i class="icon-paper-clip"></i>
-              服务器信息</a>
+              主机信息</a>
             </li>
 
             <li 

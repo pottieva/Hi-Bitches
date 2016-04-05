@@ -3,11 +3,10 @@
  * @Author: Perry.Zhang
  * @Date:   2015-10-26 11:38:54
  * @Last Modified by:   Perry.Zhang
- * @Last Modified time: 2016-03-17 13:41:44
+ * @Last Modified time: 2016-03-30 14:52:19
  */
-class User_model extends CI_Model{
-
-
+class User_model extends CI_Model
+{
     protected $table='admin_user';
     //protected $database='newbee';
     
@@ -157,7 +156,7 @@ class User_model extends CI_Model{
     Example:
 */
 
-    function get_user_by_id_called_by_django($id)
+    public function get_user_by_id_called_by_django($id)
     {
         #$url = 'http://bitch.com/index.php/user_info/';
         $url = "http://baidu.com";
