@@ -3,7 +3,7 @@
  * @Author: Perry.Zhang
  * @Date:   2015-11-16 09:05:06
  * @Last Modified by:   Perry.Zhang
- * @Last Modified time: 2016-03-30 16:14:04
+ * @Last Modified time: 2016-04-05 15:02:01
  */
 
 class User_info extends CI_Controller 
@@ -54,9 +54,9 @@ class User_info extends CI_Controller
 
 
    /*
-     * written by Perry.Zhang
-     * 删除用户信息，根据id删除
-     */
+    * written by Perry.Zhang
+    * 删除用户信息，根据id删除
+    */
     public function del_usermsg() 
     {
         $data["id"] = $_GET["id"];

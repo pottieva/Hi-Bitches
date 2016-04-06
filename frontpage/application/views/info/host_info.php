@@ -3,7 +3,7 @@
  * @Author: Perry.Zhang
  * @Date:   2016-03-30 15:09:55
  * @Last Modified by:   Perry.Zhang
- * @Last Modified time: 2016-04-01 09:49:57
+ * @Last Modified time: 2016-04-06 10:12:45
  */
 ?>
 <!-- BEGIN PAGE LEVEL STYLES -->
@@ -92,7 +92,7 @@
                             * modify  by Perry.Zhang
                             */
                             -->
-                            <?php  foreach($userlist[0] as $key=>$value )
+                            <?php  foreach($hostlist[0] as $key=>$value )
                                     {  
                                         echo "<th>"; 
                                         echo  strtoupper($key); 
@@ -108,10 +108,10 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <?php if (count($userlist)!=0)   { ?>
-                            <?php foreach ($userlist as $user_item):?>
+                            <?php if (count($hostlist)!=0)   { ?>
+                            <?php foreach ($hostlist as $host_item):?>
                             <tr>
-                                <?php foreach ($user_item as $item):?>
+                                <?php foreach ($host_item as $item):?>
                                 <td>
                                     <?php echo $item;?>
                                 </td>
@@ -161,7 +161,7 @@
 <!-- BEGIN PAGE LEVEL SCRIPTS -->
 <script src="static/assets/admin/pages/scripts/table-editable.js"></script>
  <!--  d  trigger  JS -->
-<script>
+<!-- <script>
 function GetInfoFromTable() {
      $.ajax({
          url: "http://test.newbee.com/dashboard/reload",  
@@ -181,4 +181,4 @@ function GetInfoFromTable() {
     }
 });    
 }
-</script>
+</script> -->
