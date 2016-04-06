@@ -5,10 +5,10 @@ require APPPATH.'/libraries/REST_Controller.php';
  * @Author: Perry.Zhang
  * @Date:   2016-03-14 11:50:41
  * @Last Modified by:   Perry.Zhang
- * @Last Modified time: 2016-04-06 11:36:31
+ * @Last Modified time: 2016-04-06 13:56:00
  */
 
-class Api_debug extends REST_Controller
+class Api_debug extends CI_Controller
 {
     public function __construct()
     {
@@ -17,7 +17,7 @@ class Api_debug extends REST_Controller
         $this->load->library('curl');
     }
  
-    function debug_get()
+    function index()
     {
         // For debug
         

@@ -5,8 +5,6 @@
  * @Last Modified time: 2015-11-26 19:54
  */
 
-
-
 var TableEditable = function () {
 
     var handleTable = function () {
@@ -21,7 +19,7 @@ var TableEditable = function () {
 
             oTable.fnDraw();
         }
-        //start modified by huzj  
+ 
         function editRow(oTable, nRow) { 
             var aData = oTable.fnGetData(nRow);
             var jqTds = $('>td', nRow);
@@ -74,7 +72,7 @@ var TableEditable = function () {
            
             xhr.onreadystatechange=function() { 
             	if (xhr.readyState==4) {
-				        //0：未初始化  1：读取中   2：已读取   3：交互中    4：完成
+				        // 0：未初始化  1：读取中   2：已读取   3：交互中    4：完成
             		if (xhr.status==200) {
             			msg = xhr.responseText;
           		  	}
@@ -103,22 +101,22 @@ var TableEditable = function () {
             // So when dropdowns used the scrollable div should be removed. 
             //"dom": "<'row'<'col-md-6 col-sm-12'l><'col-md-6 col-sm-12'f>r>t<'row'<'col-md-5 col-sm-12'i><'col-md-7 col-sm-12'p>>",
             "lengthMenu": [
+                // change per page values here
                 [10, 5, 15, 20, -1],
-                [10, 5, 15, 20, "All"] // change per page values here
+                [10, 5, 15, 20, "All"] 
             ],
-            // Or you can use remote translation file
-            //"language": {
-            //   url: '//cdn.datatables.net/plug-ins/3cfcc339e89/i18n/Portuguese.json'
-            //},
      
-            
-            // set the initial value   
-            // modifiy by   Perry.Zhang
+            /*
+            * @ Creator: Perry.Zhang
+            * @ Date: 2016/04/06
+            * @ Annotation: 设置初始值
+            * */
             "pageLength": 10, 
             "language": {
                 "lengthMenu": " _MENU_ records"
             },
-            "columnDefs": [{ // set default column settings
+            "columnDefs": [{ 
+                // set default column settings
                 'orderable': true,
                 'targets': [0]
             }, {
@@ -127,7 +125,7 @@ var TableEditable = function () {
             }],
 
             // set first column as a default sort by asc  
-            // modifiy by   Perry.Zhang
+            // modifiy by Perry.Zhang
             "order": [
                 [0, "asc"]
             ] 
@@ -167,7 +165,7 @@ var TableEditable = function () {
             // 遍历Table的th标签 
             oTable.find('th').each(function (thindex, thitem) {   
                 var col_name=$(thitem).text();
-               if (col_name=='LOGIN_COUNT' ) {
+                if (col_name=='LOGIN_COUNT' ) {
                   totalString[flag]=0;
                 }else if (col_name=='STATUS' ) {
                   totalString[flag]=1;

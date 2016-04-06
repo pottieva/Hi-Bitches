@@ -3,7 +3,7 @@
  * @Author: Perry.Zhang
  * @Date:   2016-03-30 15:09:55
  * @Last Modified by:   Perry.Zhang
- * @Last Modified time: 2016-04-06 10:12:45
+ * @Last Modified time: 2016-04-06 15:34:37
  */
 ?>
 <!-- BEGIN PAGE LEVEL STYLES -->
@@ -88,8 +88,9 @@
                             <thead>
                             <tr>
                             <!--                           
-                            * written by huzj 更新用户信息
-                            * modify  by Perry.Zhang
+                            * @ Creator: Perry.Zhang
+                            * @ Date: 2016/04/06 
+                            * @ Annotation: 展示主机信息
                             */
                             -->
                             <?php  foreach($hostlist[0] as $key=>$value )
@@ -160,25 +161,3 @@
 <!-- END PAGE LEVEL PLUGINS -->
 <!-- BEGIN PAGE LEVEL SCRIPTS -->
 <script src="static/assets/admin/pages/scripts/table-editable.js"></script>
- <!--  d  trigger  JS -->
-<!-- <script>
-function GetInfoFromTable() {
-     $.ajax({
-         url: "http://test.newbee.com/dashboard/reload",  
-         type: "POST",
-         dataType: "json",
-         error: function(){  
-             alert('Error loading XML document');  
-         },  
-         success: function(data){//如果调用php成功  
-
-          document.getElementById("ajaxloading").innerHTML=data[0];
-          jQuery(document).ready(function() {       
-          TableEditable.init();
-
-         });
-
-    }
-});    
-}
-</script> -->

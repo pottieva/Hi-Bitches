@@ -503,3 +503,9 @@ $config['rewrite_short_tags'] = FALSE;
 | Array:		array('10.0.1.200', '192.168.5.0/24')
 */
 $config['proxy_ips'] = '';
+
+/**
+ * 自定义后端URL
+ *
+ */
+$config['backend_url'] = 'http://127.0.0.1:8000';
