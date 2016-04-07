@@ -5,7 +5,7 @@ require APPPATH.'/libraries/REST_Controller.php';
  * @Author: Perry.Zhang
  * @Date:   2016-03-14 11:50:41
  * @Last Modified by:   Perry.Zhang
- * @Last Modified time: 2016-04-06 13:56:00
+ * @Last Modified time: 2016-04-07 09:32:52
  */
 
 class Api_debug extends CI_Controller
@@ -23,7 +23,7 @@ class Api_debug extends CI_Controller
         
         $url = "http://127.0.0.1:8000/api/status/2/";
         $auth_url='http://127.0.0.1:8000/api/token/';
-        $auth_data='{"username":"root","password":"123456"}';
+        $auth_data='{"username":"admin","password":"admin"}';
 
         $data = '{"id":"2"}';
         $result = $this->curl->request_interface($auth_url,"GET_TOKEN",$auth_data);

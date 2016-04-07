@@ -160,7 +160,7 @@
 <script type="text/javascript" src="static/assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.js"></script>
 <!-- END PAGE LEVEL PLUGINS -->
 <!-- BEGIN PAGE LEVEL SCRIPTS -->
-<script src="static/assets/admin/pages/scripts/table-editable.js"></script>
+<script src="static/assets/admin/pages/scripts/table-editable-user.js"></script>
  <!--  d  trigger  JS -->
 <script>
 function GetInfoFromTable() {

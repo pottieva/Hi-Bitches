@@ -3,7 +3,7 @@
  * @Author: Perry.Zhang
  * @Date:   2016-03-30 15:09:55
  * @Last Modified by:   Perry.Zhang
- * @Last Modified time: 2016-04-06 15:34:37
+ * @Last Modified time: 2016-04-07 14:59:19
  */
 ?>
 <!-- BEGIN PAGE LEVEL STYLES -->
@@ -11,130 +11,130 @@
 <link rel="stylesheet" type="text/css" href="./static/assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.css"/>
 <!-- END PAGE LEVEL STYLES -->
 <!-- BEGIN PAGE HEADER -->
-      <div class="page-bar">
+    <div class="page-bar">
         <ul class="page-breadcrumb">
-          <li>
-            <i class="fa fa-home"></i>
-            <a href="<?php echo base_url();?>">Home</a>
-            <i class="fa fa-angle-right"></i>
-          </li>
-          <li>
-             <?php echo $title;?>          
-          </li>
+            <li>
+                <i class="fa fa-home"></i>
+                <a href="<?php echo base_url();?>">Home</a>
+                <i class="fa fa-angle-right"></i>
+            </li>
+            <li>
+                <?php echo $title;?>          
+            </li>
         </ul>
         <div class="page-toolbar">
-          <div id="dashboard-report-range" class="pull-right tooltips btn btn-sm btn-default" data-container="body" data-placement="bottom" data-original-title="Change dashboard date range">
-            <i class="icon-calendar"></i>&nbsp; <span class="thin uppercase visible-lg-inline-block"></span>&nbsp; <i class="fa fa-angle-down"></i>
-          </div>
+            <div id="dashboard-report-range" class="pull-right tooltips btn btn-sm btn-default" data-container="body" data-placement="bottom" data-original-title="Change dashboard date range">
+                <i class="icon-calendar"></i>&nbsp; <span class="thin uppercase visible-lg-inline-block"></span>&nbsp; <i class="fa fa-angle-down"></i>
+            </div>
         </div>
-      </div>
-      <h3 class="page-title">
+    </div>
+    <h3 class="page-title">
         <?php echo $title;?>
-      </h3>
-      <!-- END PAGE HEADER-->
-<!-- BEGIN PAGE CONTENT-->
-            <div class="row">
-                <div class="col-md-12">
-                    <!-- BEGIN EXAMPLE TABLE PORTLET-->
-                    <div class="portlet box blue">
-                        <div class="portlet-title">
-                            <div class="caption">
-                                <i class="fa fa-edit"></i><?php echo $title;?>
-                            </div>
-                            <div class="tools">
-                                <a href="javascript:;" class="collapse">
-                                </a>
-                                <a href="#portlet-config" data-toggle="modal" class="config">
-                                </a>
-                                <a href="javascript:;" onclick="GetInfoFromTable()" class="reload"  >
-                                </a>
-                                <a href="javascript:;" class="remove">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="portlet-body">
-                            <div class="table-toolbar">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="btn-group">
-                                            <button id="sample_editable_1_new" class="btn green">
-                                            新增主机 <i class="fa fa-plus"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="btn-group pull-right">
-                                            <button class="btn dropdown-toggle" data-toggle="dropdown">Tools <i class="fa fa-angle-down"></i>
-                                            </button>
-                                            <ul class="dropdown-menu pull-right">
-                                                <li>
-                                                    <a href="javascript:;">
-                                                    Print </a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:;">
-                                                    Save as PDF </a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:;">
-                                                    Export to Excel </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
+    </h3>
+    <!-- END PAGE HEADER-->
+    <!-- BEGIN PAGE CONTENT-->
+    <div class="row">
+        <div class="col-md-12">
+            <!-- BEGIN EXAMPLE TABLE PORTLET-->
+            <div class="portlet box blue">
+                <div class="portlet-title">
+                    <div class="caption">
+                        <i class="fa fa-edit"></i><?php echo $title;?>
+                    </div>
+                    <div class="tools">
+                        <a href="javascript:;" class="collapse">
+                        </a>
+                        <a href="#portlet-config" data-toggle="modal" class="config">
+                        </a>
+                        <a href="javascript:;" onclick="GetInfoFromTable()" class="reload"  >
+                        </a>
+                        <a href="javascript:;" class="remove">
+                        </a>
+                    </div>
+                </div>
+                <div class="portlet-body">
+                    <div class="table-toolbar">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="btn-group">
+                                    <button id="add_host_button" class="btn green">
+                                    新增主机 <i class="fa fa-plus"></i>
+                                    </button>
                                 </div>
                             </div>
-                            <table class="table table-striped table-hover table-bordered" id="sample_editable_1">
-                            <thead>
-                            <tr>
-                            <!--                           
-                            * @ Creator: Perry.Zhang
-                            * @ Date: 2016/04/06 
-                            * @ Annotation: 展示主机信息
-                            */
-                            -->
-                            <?php  foreach($hostlist[0] as $key=>$value )
-                                    {  
-                                        echo "<th>"; 
-                                        echo  strtoupper($key); 
-                                        echo "</th>"; 
-                                    }  
-                            ?>           
-                                <th>
-                                    修改
-                                </th>
-                                <th>
-                                    删除                    
-                                </th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <?php if (count($hostlist)!=0)   { ?>
-                            <?php foreach ($hostlist as $host_item):?>
-                            <tr>
-                                <?php foreach ($host_item as $item):?>
-                                <td>
-                                    <?php echo $item;?>
-                                </td>
-                                <?php endforeach;?>
-                                <td>
-                                    <a class="edit" href="javascript:;">
-                                    Edit </a>
-                                </td>
-                                <td>
-                                    <a class="delete" href="javascript:;">
-                                    Delete </a>
-                                </td>
-                            </tr>
-                            <?php endforeach; } else { echo "NO DATA" ;} ?>
-                            </tbody>
-                            </table>
+                            <div class="col-md-6">
+                                <div class="btn-group pull-right">
+                                    <button class="btn dropdown-toggle" data-toggle="dropdown">Tools <i class="fa fa-angle-down"></i>
+                                    </button>
+                                    <ul class="dropdown-menu pull-right">
+                                        <li>
+                                            <a href="javascript:;">
+                                            Print </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">
+                                            Save as PDF </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">
+                                            Export to Excel </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <!-- END EXAMPLE TABLE PORTLET-->
+                    <table class="table table-striped table-hover table-bordered" id="host_editable_1">
+                    <thead>
+                    <tr>
+                    <!--                           
+                    * @ Creator: Perry.Zhang
+                    * @ Date: 2016/04/06 
+                    * @ Annotation: 展示主机信息
+                    */
+                    -->
+                    <?php  foreach($hostlist[0] as $key=>$value )
+                            {  
+                                echo "<th>"; 
+                                echo  strtoupper($key); 
+                                echo "</th>"; 
+                            }  
+                    ?>           
+                        <th>
+                            修改
+                        </th>
+                        <th>
+                            删除                    
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <?php if (count($hostlist)!=0)   { ?>
+                    <?php foreach ($hostlist as $host_item):?>
+                    <tr>
+                        <?php foreach ($host_item as $item):?>
+                        <td>
+                            <?php echo $item;?>
+                        </td>
+                        <?php endforeach;?>
+                        <td>
+                            <a class="edit" href="javascript:;">
+                            Edit </a>
+                        </td>
+                        <td>
+                            <a class="delete" href="javascript:;">
+                            Delete </a>
+                        </td>
+                    </tr>
+                    <?php endforeach; } else { echo "NO DATA" ;} ?>
+                    </tbody>
+                    </table>
                 </div>
             </div>
-            <!-- END PAGE CONTENT -->
+            <!-- END EXAMPLE TABLE PORTLET-->
+        </div>
+    </div>
+    <!-- END PAGE CONTENT -->
 
 <!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
 <!-- BEGIN CORE PLUGINS -->
@@ -160,4 +160,31 @@
 <script type="text/javascript" src="static/assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.js"></script>
 <!-- END PAGE LEVEL PLUGINS -->
 <!-- BEGIN PAGE LEVEL SCRIPTS -->
-<script src="static/assets/admin/pages/scripts/table-editable.js"></script>
+<script src="static/assets/admin/pages/scripts/table-editable-host.js"></script>
+
+<script>
+function GetInfoFromTable() {
+     $.ajax({
+         url: "http://test.newbee.com/dashboard/reload",  
+         type: "POST",
+         dataType: "json",
+         error: function(){  
+             alert('Error loading XML document');  
+         },  
+         success: function(data){//如果调用php成功  
+
+          document.getElementById("ajaxloading").innerHTML=data[0];
+          jQuery(document).ready(function() {       
+          TableEditable.init();
+
+         });
+
+    }
+});    
+}
+</script>
+<script>
+jQuery(document).ready(function() {       
+    TableEditable.init();
+});
+</script>

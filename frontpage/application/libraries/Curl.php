@@ -3,7 +3,7 @@
  * @Author: Perry.Zhang
  * @Date:   2016-03-15 15:08:17
  * @Last Modified by:   Perry.Zhang
- * @Last Modified time: 2016-04-06 14:23:06
+ * @Last Modified time: 2016-04-07 09:31:30
  */
 
 class Curl
@@ -74,7 +74,7 @@ class Curl
         }
     }
 
-    function get_token($auth_url='http://127.0.0.1:8000/api/token/',$auth_data='{"username":"root","password":"123456"}')
+    function get_token($auth_url='http://127.0.0.1:8000/api/token/',$auth_data='{"username":"admin","password":"admin"}')
     {
         $raw_token = json_decode($this->request_interface($auth_url,"GET_TOKEN",$auth_data));
         $token = $raw_token->token;
