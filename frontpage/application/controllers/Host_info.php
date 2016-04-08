@@ -3,7 +3,7 @@
  * @Author: Perry.Zhang
  * @Date:   2016-03-30 14:00:03
  * @Last Modified by:   Perry.Zhang
- * @Last Modified time: 2016-04-06 15:39:57
+ * @Last Modified time: 2016-04-08 10:05:53
  */
 class Host_info extends CI_Controller 
 {
@@ -25,22 +25,22 @@ class Host_info extends CI_Controller
     /* 
     * @ Creator: Perry.Zhang
     * @ Date: 2016/04/06
-    * @ Annotation: 保存、更新用户信息。根据id来判断是insert 还是update。
+    * @ Annotation: 保存、更新用户信息。根据hid来判断是insert 还是update。
     */
     function save_host()
     {  
         foreach ($_GET as $key=>$value){
             $data[$key]=$value;
         }
-        $id = $data["id"]; 
-        if ($id == "")
+        $hid = $data["host_id"]; 
+        if ($hid == "")
         { 
             //清空空字符id
-            unset($data["id"]);
+            unset($data["host_id"]);
             $this->host->insert($data);
         }else
         {
-            $this->host->update($data,$id);
+            $this->host->update($data,$hid);
         }        
     }
 

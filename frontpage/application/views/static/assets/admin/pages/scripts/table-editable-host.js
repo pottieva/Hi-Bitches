@@ -79,7 +79,7 @@ var TableEditable = function () {
           	  	}
             };
 
-            url = window.location.href+"/save_usermsg?"+parameters;
+            url = window.location.href+"/save_host?"+parameters;
             // 当前URL          
             xhr.open("GET",url,true);          
             xhr.send(null);                      
@@ -162,21 +162,21 @@ var TableEditable = function () {
             * 给insert 行初始化列
             * 定义空字符串所在数组
             * */
-            // var totalString = new Array();
+            var totalString = new Array();
             // // 定义标志位
-            // var flag = 0;
-            // // 遍历Table的th标签 
-            // oTable.find('th').each(function (thindex, thitem) {   
-            //     var col_name = $(thitem).text();
-            //     if (col_name == 'LOGIN_COUNT' ) {
-            //         totalString[flag] = 0;
-            //     }else if (col_name == 'STATUS' ) {
-            //         totalString[flag] = 1;
-            //     }else {
-            //         totalString[flag] = ''; 
-            //     }               	 
-            //     flag++;
-            // });
+            var flag = 0;
+            // 遍历Table的th标签 
+            oTable.find('th').each(function (thindex, thitem) {   
+                var col_name = $(thitem).text();
+                if (col_name == 'HOST_GROUP' ) {
+                    totalString[flag] = 'Web';
+                }else if (col_name == 'HOST_NAME' ) {
+                    totalString[flag] = "Local Host";
+                }else {
+                    totalString[flag] = ''; 
+                }               	 
+                flag++;
+            });
             var aiNew = oTable.fnAddData(totalString);
             var nRow = oTable.fnGetNodes(aiNew[0]);
             editRow(oTable, nRow);
