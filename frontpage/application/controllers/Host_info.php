@@ -3,7 +3,7 @@
  * @Author: Perry.Zhang
  * @Date:   2016-03-30 14:00:03
  * @Last Modified by:   Perry.Zhang
- * @Last Modified time: 2016-04-08 10:05:53
+ * @Last Modified time: 2016-04-11 17:55:20
  */
 class Host_info extends CI_Controller 
 {
@@ -25,23 +25,38 @@ class Host_info extends CI_Controller
     /* 
     * @ Creator: Perry.Zhang
     * @ Date: 2016/04/06
-    * @ Annotation: 保存、更新用户信息。根据hid来判断是insert 还是update。
+    * @ Annotation: 插入、更新用户信息。根据URL更新。
     */
     function save_host()
     {  
         foreach ($_GET as $key=>$value){
             $data[$key]=$value;
         }
-        $hid = $data["host_id"]; 
-        if ($hid == "")
+        $host_url = $data["url"]; 
+        if ($host_url == "")
         { 
-            //清空空字符id
-            unset($data["host_id"]);
+            unset($data["url"]);
             $this->host->insert($data);
         }else
         {
-            $this->host->update($data,$hid);
+            $this->host->update($data,$host_url);
         }        
+    }
+
+    /*
+    * written by Perry.Zhang
+    * 删除主机信息。根据URL删除。
+    */
+    function delete_host() 
+    {
+        foreach ($_GET as $key=>$value){
+            $data[$key]=$value;
+        }
+        $host_url = $data["url"];
+        $host_name = $data["host_name"];
+        $this->host->delete($host_url);
+        $response = "Host Name为：".$host_name."的信息已删除";
+        echo $response;
     }
 
     /*
@@ -51,8 +66,8 @@ class Host_info extends CI_Controller
     * @     前端用户信息reload：调用的方法。
     * @     前端请求类型：ajax，只刷新部分数据。提高用户的体验度；减少数据传输提高响应速度。
     */
-    function reload(){         
-        $this->load->helper('url');
+    function reload()
+    {         
         $data = $this->host->get_total_hosts();
         $data['title'] = "主机信息";
         $data[0] = $this->load->view('info/host_info',$data,true);

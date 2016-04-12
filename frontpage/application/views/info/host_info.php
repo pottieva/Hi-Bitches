@@ -3,7 +3,7 @@
  * @Author: Perry.Zhang
  * @Date:   2016-03-30 15:09:55
  * @Last Modified by:   Perry.Zhang
- * @Last Modified time: 2016-04-07 14:59:19
+ * @Last Modified time: 2016-04-11 17:38:40
  */
 ?>
 <!-- BEGIN PAGE LEVEL STYLES -->
@@ -46,7 +46,7 @@
                         </a>
                         <a href="#portlet-config" data-toggle="modal" class="config">
                         </a>
-                        <a href="javascript:;" onclick="GetInfoFromTable()" class="reload"  >
+                        <a href="javascript:reloadRow();" class="reload" id="ajaxreloading">
                         </a>
                         <a href="javascript:;" class="remove">
                         </a>
@@ -162,27 +162,6 @@
 <!-- BEGIN PAGE LEVEL SCRIPTS -->
 <script src="static/assets/admin/pages/scripts/table-editable-host.js"></script>
 
-<script>
-function GetInfoFromTable() {
-     $.ajax({
-         url: "http://test.newbee.com/dashboard/reload",  
-         type: "POST",
-         dataType: "json",
-         error: function(){  
-             alert('Error loading XML document');  
-         },  
-         success: function(data){//如果调用php成功  
-
-          document.getElementById("ajaxloading").innerHTML=data[0];
-          jQuery(document).ready(function() {       
-          TableEditable.init();
-
-         });
-
-    }
-});    
-}
-</script>
 <script>
 jQuery(document).ready(function() {       
     TableEditable.init();

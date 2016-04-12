@@ -70,16 +70,17 @@ var TableEditable = function () {
             	xhr = new ActiveXObject("Microsoft.XMLHTTP");
             }
            
-            xhr.onreadystatechange=function() { 
-            	if (xhr.readyState==4) {
-				        // 0：未初始化  1：读取中   2：已读取   3：交互中    4：完成
-            		if (xhr.status==200) {
-            			msg = xhr.responseText;
-          		  	}
-          	  	}
-            };
+            // xhr.onreadystatechange=function() { 
+            // 	if (xhr.readyState==4) {
+				        // // 0：未初始化  1：读取中   2：已读取   3：交互中    4：完成
+            // 		if (xhr.status==200) {
+            // 			msg = xhr.responseText;
+          		//   	}
+          	 //  	}
+            // };
 
            url = window.location.href+"/save_usermsg?"+parameters;
+           alert(url);
            // 当前URL          
            xhr.open("GET",url,true);          
            xhr.send(null);                      

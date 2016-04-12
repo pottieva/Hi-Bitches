@@ -683,7 +683,7 @@ License: You must have a valid license purchased only from themeforest(the above
       
       
       <!-- 自定义页面部分-->
-      <div id="ajaxloading">
+      <div>
       <?php echo $content_for_layout; ?>
       </div>
 

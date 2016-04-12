@@ -39,27 +39,27 @@ var TableEditable = function () {
 
         function saveRow(oTable, nRow) {
         	// 获取表头
-            var arr=new Array();
-            var parameters="";
-            var m=0;
+            var arr = new Array();
+            var parameters = "";
+            var count = 0;
             oTable.find('th').each(function (thindex, thitem) { //遍历Table dgItem的th  
-                    arr[m] = $(thitem).text(); 
-                    m=m+1;
+                    arr[count] = $(thitem).text(); 
+                    count = count + 1;
      
             });
 
             // 前台js静态保存数据
             var jqInputs = $('input', nRow);
-            for (var i=0;i<jqInputs.length;i++) {
+            for (var i = 0;i < jqInputs.length;i++) {
             	oTable.fnUpdate(jqInputs[i].value, nRow, i, false);
             	// 获取url 参数键值对
-            	parameters=parameters+ arr[i].toLowerCase()+"="+jqInputs[i].value+"&";
+            	parameters = parameters + arr[i].toLowerCase() + "=" + jqInputs[i].value + "&";
             }        
             oTable.fnUpdate('<a class="edit" href="">Edit</a>', nRow, jqInputs.length, false);
             oTable.fnUpdate('<a class="delete" href="">Delete</a>', nRow, jqInputs.length+1, false);
             oTable.fnDraw();           
           
-            // ajax              
+            // Ajax Obj              
             var xhr;
             // code for IE7+, Firefox, Chrome, Opera, Safari
             if (window.XMLHttpRequest) {
@@ -69,31 +69,43 @@ var TableEditable = function () {
             	// code for IE6, IE5
             	xhr = new ActiveXObject("Microsoft.XMLHTTP");
             }
-           
-            xhr.onreadystatechange=function() { 
-            	if (xhr.readyState==4) {
-				        // 0：未初始化  1：读取中   2：已读取   3：交互中    4：完成
-            		if (xhr.status==200) {
-            			msg = xhr.responseText;
-          		  	}
-          	  	}
-            };
 
+            // 当前URL
             url = window.location.href+"/save_host?"+parameters;
-            // 当前URL          
+                      
             xhr.open("GET",url,true);          
             xhr.send(null);                      
         }
    
         function cancelEditRow(oTable, nRow) {
         	var jqInputs = $('input', nRow);
-            for (var i=0;i<jqInputs.length;i++)
+            for (var i = 0;i < jqInputs.length;i++)
             {
             	oTable.fnUpdate(jqInputs[i].value, nRow, i, false);
             } 
             oTable.fnUpdate('<a class="edit" href="">Edit</a>', nRow,jqInputs.length, false);
             oTable.fnDraw();
         }
+
+        function reloadRow() {
+            url = window.location.href+"/host_info/reload";
+            $.ajax({
+                url: url,  
+                type: "POST",
+                dataType: "json",
+                error: function(){  
+                    alert('Error loading XML document');  
+                },  
+                success: function(data){//如果调用php成功         
+                    //$("#ajaxreloading").DataTable().ajax.reload();
+                    document.getElementById("ajaxloading").innerHTML=data[0];
+                    jQuery(document).ready(function() {       
+                        TableEditable.init();
+                    });
+                }
+            });    
+        }
+
         var table = $('#host_editable_1');
         var oTable = table.dataTable({
             // Uncomment below line("dom" parameter) to fix the dropdown overflow issue in the datatable cells. The default datatable layout
@@ -130,6 +142,7 @@ var TableEditable = function () {
                 [0, "asc"]
             ] 
         });
+
         var tableWrapper = $("#host_editable_1_wrapper");
         tableWrapper.find(".dataTables_length select").select2({
             showSearchInput: false //hide search box with special css class
@@ -162,22 +175,22 @@ var TableEditable = function () {
             * 给insert 行初始化列
             * 定义空字符串所在数组
             * */
-            var totalString = new Array();
+            var tableString = new Array();
             // // 定义标志位
             var flag = 0;
             // 遍历Table的th标签 
             oTable.find('th').each(function (thindex, thitem) {   
                 var col_name = $(thitem).text();
                 if (col_name == 'HOST_GROUP' ) {
-                    totalString[flag] = 'Web';
+                    tableString[flag] = 'Web';
                 }else if (col_name == 'HOST_NAME' ) {
-                    totalString[flag] = "Local Host";
+                    tableString[flag] = "Local Host";
                 }else {
-                    totalString[flag] = ''; 
+                    tableString[flag] = ''; 
                 }               	 
                 flag++;
             });
-            var aiNew = oTable.fnAddData(totalString);
+            var aiNew = oTable.fnAddData(tableString);
             var nRow = oTable.fnGetNodes(aiNew[0]);
             editRow(oTable, nRow);
             nEditing = nRow;
@@ -203,16 +216,8 @@ var TableEditable = function () {
             else{// code for IE6, IE5
             	xhr = new ActiveXObject("Microsoft.XMLHTTP");
             }
-            xhr.onreadystatechange=function() { 
-             	if(xhr.readyState==4) {
-   				    //0：未初始化  1：读取中   2：已读取   3：交互中    4：完成
-             		if(xhr.status==200) {
-             			msg = xhr.responseText;
-             		}
-             	}
-            };
             
-            xhr.open("GET", window.location.href+"/del_usermsg?id="+aData[0],true);
+            xhr.open("GET", window.location.href+"/delete_host?url="+aData[0],true);
             xhr.send(null);
 
         });
