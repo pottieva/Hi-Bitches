@@ -3,14 +3,16 @@
  * @Author: Perry.Zhang
  * @Date:   2016-03-30 15:09:55
  * @Last Modified by:   Perry.Zhang
- * @Last Modified time: 2016-04-11 17:38:40
+ * @Last Modified time: 2016-04-20 13:27:03
  */
 ?>
 <!-- BEGIN PAGE LEVEL STYLES -->
 <link rel="stylesheet" type="text/css" href="./static/assets/global/plugins/select2/select2.css"/>
 <link rel="stylesheet" type="text/css" href="./static/assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.css"/>
 <!-- END PAGE LEVEL STYLES -->
+
 <!-- BEGIN PAGE HEADER -->
+<div id="ajaxreloading">
     <div class="page-bar">
         <ul class="page-breadcrumb">
             <li>
@@ -46,7 +48,7 @@
                         </a>
                         <a href="#portlet-config" data-toggle="modal" class="config">
                         </a>
-                        <a href="javascript:reloadRow();" class="reload" id="ajaxreloading">
+                        <a href="javascript:;" onclick="reloadRow()" class="reload">
                         </a>
                         <a href="javascript:;" class="remove">
                         </a>
@@ -135,7 +137,7 @@
         </div>
     </div>
     <!-- END PAGE CONTENT -->
-
+</div>
 <!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
 <!-- BEGIN CORE PLUGINS -->
 <!--[if lt IE 9]>
@@ -161,7 +163,26 @@
 <!-- END PAGE LEVEL PLUGINS -->
 <!-- BEGIN PAGE LEVEL SCRIPTS -->
 <script src="static/assets/admin/pages/scripts/table-editable-host.js"></script>
-
+<!-- END PAGE LEVEL SCRIPTS -->
+<script>
+function reloadRow() {
+    url = window.location.href+"/reload";
+    $.ajax({
+        url: url,  
+        type: "POST",
+        dataType: "json",
+        error: function(){  
+            alert('Error loading XML document');  
+        },  
+        success: function(data){//如果调用php成功 
+            document.getElementById("ajaxreloading").innerHTML=data;
+            jQuery(document).ready(function() {       
+                TableEditable.init();
+            });
+        }
+    });    
+}
+</script>
 <script>
 jQuery(document).ready(function() {       
     TableEditable.init();

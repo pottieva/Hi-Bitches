@@ -517,13 +517,19 @@ License: You must have a valid license purchased only from themeforest(the above
           </a>
           <ul class="sub-menu">
             <li 
+              <?php if($active_sub_nav=='host_info_index') echo "class=active";?>
+            >
+              <a href="<?php echo site_url('host_info');?>">
+              <i class="icon-paper-clip"></i>
+              主机信息</a>
+            </li>
+            <li 
             	<?php if($active_sub_nav=='user_info_index') echo "class=active";?>
             >
              <a href="<?php echo site_url('user_info');?>">
              <i class="icon-users"></i>
               用户信息</a>
             </li>
-
             <li 
               <?php if($active_sub_nav=='duty_info_index') echo "class=active";?>
             >
@@ -539,25 +545,14 @@ License: You must have a valid license purchased only from themeforest(the above
               规范信息</a>
             </li>
             <li 
-            	<?php if($active_sub_nav=='host_info_index') echo "class=active";?>
-            >
-              <a href="<?php echo site_url('host_info');?>">
-              <i class="icon-paper-clip"></i>
-              主机信息</a>
-            </li>
-
-            <li 
             	<?php if($active_sub_nav=='database_info_index') echo "class=active";?>
             > 
               <a href="<?php echo site_url('error404');?>">
               <i class="icon-badge"></i>
               数据库信息</a>
-            </li>
-         
+            </li>         
           </ul>
         </li>
-
-
       </ul>
       <!-- END SIDEBAR MENU -->
     </div>

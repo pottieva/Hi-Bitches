@@ -87,25 +87,6 @@ var TableEditable = function () {
             oTable.fnDraw();
         }
 
-        function reloadRow() {
-            url = window.location.href+"/host_info/reload";
-            $.ajax({
-                url: url,  
-                type: "POST",
-                dataType: "json",
-                error: function(){  
-                    alert('Error loading XML document');  
-                },  
-                success: function(data){//如果调用php成功         
-                    //$("#ajaxreloading").DataTable().ajax.reload();
-                    document.getElementById("ajaxloading").innerHTML=data[0];
-                    jQuery(document).ready(function() {       
-                        TableEditable.init();
-                    });
-                }
-            });    
-        }
-
         var table = $('#host_editable_1');
         var oTable = table.dataTable({
             // Uncomment below line("dom" parameter) to fix the dropdown overflow issue in the datatable cells. The default datatable layout
@@ -203,7 +184,7 @@ var TableEditable = function () {
                 return;
             }
             var nRow = $(this).parents('tr')[0];         
-            //begin written by huzj
+
             // 后台删除数据
             var aData = oTable.fnGetData(nRow);
             var jqTds = $('>td', nRow);          

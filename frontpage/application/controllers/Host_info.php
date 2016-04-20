@@ -3,7 +3,7 @@
  * @Author: Perry.Zhang
  * @Date:   2016-03-30 14:00:03
  * @Last Modified by:   Perry.Zhang
- * @Last Modified time: 2016-04-11 17:55:20
+ * @Last Modified time: 2016-04-20 13:29:00
  */
 class Host_info extends CI_Controller 
 {
@@ -68,10 +68,11 @@ class Host_info extends CI_Controller
     */
     function reload()
     {         
-        $data = $this->host->get_total_hosts();
-        $data['title'] = "主机信息";
-        $data[0] = $this->load->view('info/host_info',$data,true);
-        echo json_encode($data);                      
+        $hosts = $this->host->get_total_hosts();
+        $hosts['title'] = "主机信息";
+        $data[0] = $this->load->view('info/host_info',$hosts,true);
+        echo json_encode($data);
+                             
     }
 
 }
